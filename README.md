@@ -1,7 +1,7 @@
-# Client Raindrop
+# Client Phoenix Authentication
 
 ## Introduction
-The client-facing implementation of Raindrop is a natural successor to legacy two-factor authentication solutions. Applications like [Google Authenticator](https://en.wikipedia.org/wiki/Google_Authenticator) and Authy rely on access to shared secrets, secrets that are vulnerable to hacks and data breaches. With Client Raindrop, user's secrets never leave their device. And on the backend, we're using the blockchain to eliminate reliance on trusted third parties while ensuring that users will still be able to verify sign-in and other requests with the click of a button.
+The client-facing implementation of Phoenix Authentication is a natural successor to legacy two-factor authentication solutions. Applications like [Google Authenticator](https://en.wikipedia.org/wiki/Google_Authenticator) and Authy rely on access to shared secrets, secrets that are vulnerable to hacks and data breaches. With Client Phoenix Authentication, user's secrets never leave their device. And on the backend, we're using the blockchain to eliminate reliance on trusted third parties while ensuring that users will still be able to verify sign-in and other requests with the click of a button.
 
 ## Technical Note
 Unfortunately, message signing in Ethereum is implemented inconsistently across software packages. Our view is that only message hashes should be signed, not raw messages, and that the Ethereum signed message prefix can optionally be appended to the message hash before it's hashed again. Please see the table below for a summary:
@@ -24,7 +24,7 @@ Notes: Arguments to `keccak256` are [tightly packed](https://solidity.readthedoc
 - This folder has a suite of tests created through [Truffle](https://github.com/trufflesuite/truffle)
 - To run these tests:
   - Download the code
-  - Navigate to the `raindrop-client` folder in your terminal
+  - Navigate to the `phoenixAuthentication-client` folder in your terminal
   - Make sure you have Truffle and [Ganache](https://github.com/trufflesuite/ganache-cli) installed: `npm install -g truffle@4.1.8 ganache-cli`
   - Install web3 and ethereumjs-util: `npm install web3@1.0.0-beta.33 ethereumjs-util`
   - Spin up a development blockchain: `ganache-cli --seed  --port 8555`

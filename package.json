@@ -1,7 +1,7 @@
 {
-  "name": "raindrop-client",
+  "name": "phoenixauthentication-client",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Introduction The client-facing implementation of Phoenix Authentication is a natural successor to legacy two-factor authentication solutions. Applications like [Google Authenticator](https://en.wikipedia.org/wiki/Google_Authenticator) and Authy rely on access to shared secrets, secrets that are vulnerable to hacks and data breaches. With Client Phoenix Authentication, user's secrets never leave their device. And on the backend, we're using the blockchain to eliminate reliance on trusted third parties while ensuring that users will still be able to verify sign-in and other requests with the click of a button.",
   "main": "deployment_truffle.js",
   "directories": {
     "test": "test"
@@ -25,5 +25,13 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhoenixDAO/phoenix-authentication.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PhoenixDAO/phoenix-authentication/issues"
+  },
+  "homepage": "https://github.com/PhoenixDAO/phoenix-authentication#readme"
 }
